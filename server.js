@@ -9,13 +9,13 @@ app.use(cors());
 app.use(express.json());
 app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
-console.log("aninditasarkar678@gmail.com");
+console.log("aninditasarkar697@gmail.com");
 console.log("Anindita@2003");
 
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: "aninditasarkar678@gmail.com", // replace with your actual Gmail username
+    user: "aninditasarkar697@gmail.com", // replace with your actual Gmail username
     pass: "Anindita@2003"  // replace with your actual Gmail password or application-specific password
   },
 });
