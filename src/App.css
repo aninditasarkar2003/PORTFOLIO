@@ -160,11 +160,13 @@ span.navbar-text {
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
+  border-radius: 40px;
 }
 .navbar-text button span {
   z-index: 1;
 }
 .navbar-text button::before {
+  border-radius: 40px;
   content: "";
   width: 0%;
   height: 100%;
@@ -177,12 +179,14 @@ span.navbar-text {
 }
 .navbar-text button:hover {
   color: #121212;
+  border-radius: 40px;
 }
 .navbar-text button:hover::before {
 	content: "";
 	width: 100%;
 	height: 100%;
 	position: absolute;
+  border-radius: 40px;
 }
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
@@ -432,6 +436,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
 }
 .proj-txtx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: absolute;
   text-align: center;
   top: 65%;
@@ -456,6 +463,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+}
+
+.proj-txtx img{
+  justify-self: center;
+  width: 30px;
+  height: 30px;
+  margin-top:20px ;
+  
+
 }
 .background-image-right {
   top: 20%;
@@ -540,7 +556,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding-left: 0 ;
+  padding-top: 100px ;
+  padding-right: 0;
+  padding-bottom: 100px;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
@@ -616,3 +635,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
